@@ -2,14 +2,15 @@
 <html>
 <head>
     
-
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
    
     
 
 </head>
 
 <body>
-    <script>
+   <div id=""container"></div>
+   <script>
         window.RufflePlayer = window.RufflePlayer || {};
     
         window.addEventListener("DOMContentLoaded", () => {
@@ -20,9 +21,9 @@
             player.load("./papascheeseria_102.swf");
         });
     </script>
-    <script src="ruffle.js"></script>
+   
 
-    <embed src="..public\papascheeseria_102.swf" width="640" height="480"></embed>
+ 
 <h1>
     "Indicator"
 </h1>
