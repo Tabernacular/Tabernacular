@@ -11,7 +11,9 @@
 		<div id="container"></div>
 		<script>
 			window.RufflePlayer = window.RufflePlayer || {};
-
+			window.RufflePlayer.config = {
+				"scale": "noborder",
+			};
 			window.addEventListener("DOMContentLoaded", () => {
 				let ruffle = window.RufflePlayer.newest();
 				let player = ruffle.createPlayer();
