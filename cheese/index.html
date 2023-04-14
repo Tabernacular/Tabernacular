@@ -6,13 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Cheese</title>
 		<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
 		<div id="container"></div>
 		<script>
 			window.RufflePlayer = window.RufflePlayer || {};
 			window.RufflePlayer.config = {
-				"scale": "noborder",
+				scale: "noborder",
 			};
 			window.addEventListener("DOMContentLoaded", () => {
 				let ruffle = window.RufflePlayer.newest();
