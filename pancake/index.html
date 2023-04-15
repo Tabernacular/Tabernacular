@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pancake</title>
+		<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="container"></div>
+		<script>
+			window.RufflePlayer = window.RufflePlayer || {};
+			window.RufflePlayer.config = {
+				scale: "noborder",
+                warnOnUnsupportedContent: false,
+                autoplay: "on",
+			};
+			window.addEventListener("DOMContentLoaded", () => {
+				let ruffle = window.RufflePlayer.newest();
+				let player = ruffle.createPlayer();
+				let container = document.getElementById("container");
+				container.appendChild(player);
+				player.load("./papaspancakeria.swf");
+			});
+		</script>
+	</body>
+</html>
